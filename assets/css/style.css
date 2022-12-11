@@ -346,6 +346,10 @@ p {
     color: #3b2843;
 }
 
+#projet p {
+    color: #3b2843;
+}
+
 #projet .glass {
     border-radius: 2rem;
     box-shadow: inset -25px 25px 51px #c8c0cb,
@@ -357,9 +361,9 @@ p {
     width: 90%;
 }
 
-.blank {
+.slider_text {
     display: relative;
-    justify-content: right;
+    justify-content: row;
     margin: 0 auto;
     max-width: 48rem;
 }
