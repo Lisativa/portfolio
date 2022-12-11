@@ -355,7 +355,7 @@ p {
     box-shadow: inset -25px 25px 51px #c8c0cb,
                 inset 25px -25px 51px #f1f1f1;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 80vh;
     padding: 50px;
     width: 90%;
