@@ -80,26 +80,26 @@ p {
     pointer-events : none;
 }
 
-#navbar {
+ul {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-#navbar li {
+ul li {
     list-style-type: none;
     margin-left: 20px;
 
 }
 
-#navbar li a {
+ul li a {
     border-radius: 20px;
     color: white;
     padding: 6px 15px;
     text-decoration: none;
 }
 
-#navbar li a:hover {
+ul li a:hover {
     background: white;
     color: #2f1544;
 }
