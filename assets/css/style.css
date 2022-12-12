@@ -16,7 +16,7 @@ body {
 header {
     align-items: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     left: 0;
     padding: 30px 100px;
     position: absolute;
@@ -54,7 +54,7 @@ header {
 section {
     background: #3b2843;
     height: 100vh;
-    padding: 100px;
+    padding: 80px;
     position: relative;
 }
 
@@ -78,6 +78,35 @@ p {
     font-size: 2em;
     color : #ffffffb6;
     pointer-events : none;
+}
+
+#navbar {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    margin-left: 20px;
+
+}
+
+#navbar li a {
+    border-radius: 20px;
+    color: white;
+    padding: 6px 15px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    background: white;
+    color: #2f1544;
+}
+
+#space {
+    display: flex;
+    width: 10em;
 }
 
 #name {
@@ -361,7 +390,7 @@ p {
     width: 90%;
 }
 
-.section {
+#projet .glass .section {
     padding: 20px;
 }
 

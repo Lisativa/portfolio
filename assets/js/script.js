@@ -29,7 +29,9 @@ window.addEventListener('scroll', () => {
     star_2.style.top  = value * -0.5 + 'px';
     star_2.style.right  = value * -0.5 + 'px';
     star_3.style.left = value * -0.5 + 'px';
+
 });
+
 
 function App() {
     const [offsetY, setOffsetY] = useState[0];
