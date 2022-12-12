@@ -361,6 +361,10 @@ p {
     width: 90%;
 }
 
+.section {
+    padding: 20px;
+}
+
 .slider_text {
     display: relative;
     justify-content: row;
