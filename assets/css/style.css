@@ -8,9 +8,17 @@
     padding: 0;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 576px) {
     body {
         overflow-x: hidden;
+    }
+
+    section {
+        background: #3b2843;
+        height: 100vh;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
     }
 }
 
