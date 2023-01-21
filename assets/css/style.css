@@ -8,19 +8,8 @@
     padding: 0;
 }
 
-@viewport {
-    width: extend-to-zoom;
-    zoom: 1.0;
-}
-
-@-ms-viewport {
-    width: extend-to-zoom;
-    zoom: 1.0;
-}
-
 body {
     display: block;
-    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -35,32 +24,6 @@ header {
     width: 100%;
     z-index: 100;
 }
-
-/** {
-  scrollbar-width: thin;
-  scrollbar-color: #BB91FF #FFFFFF;
-  overflow: overlay;
-  overflow-x: hidden; 
-}
-
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  border-radius: 20px;
-  background-color: #d9ccee;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #A580E1;
-}
-
-*::-webkit-scrollbar-thumb:active {
-  background-color: #755BA0;
-} 
-*/
 
 section {
     background: #3b2843;
@@ -87,7 +50,7 @@ p {
 }
 
 .logo {
-    font-size: clamp(1vh, 2em, 5vw);
+    font-size: 2em;
     color : #ffffffb6;
     pointer-events : none;
 }
@@ -95,6 +58,7 @@ p {
 ul {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -291,6 +255,7 @@ ul li a:hover {
     left: 0;
     object-fit: cover;
     position: absolute;
+    width: 100%;
     z-index: 0;
 }
 
@@ -299,82 +264,12 @@ ul li a:hover {
     border-radius: 50%;
     border: 15px solid transparent;
     column-gap: 1em;
-    height: 120px;
     justify-content: center;
     margin: 30px;
+    max-width: 20vw;
     outline-offset: 12px;
     outline: 2px solid #ffffff;
-}
-
-#python_logo { box-shadow: 0 0 0 2px #fff, 0px -67px 0px -53px #fff, 9px -66px 0px -53px #fff,
-    17px -64px 0px -53px #fff, 25px -62px 0px -53px #fff, 33px -58px 0px -53px #fff, 
-    41px -53px 0px -53px #fff, 48px -47px 0px -53px #fff, 53px -41px 0px -53px #fff, 
-    56px -36px 0px -53px #fff, 59px -32px 0px -53px #fff, 62px -26px 0px -53px #fff, 
-    64px -20px 0px -53px #fff, 65px -14px 0px -53px #fff, 66px -7px 0px -53px #fff, 
-    67px 0px 0px -53px #fff, 66px 9px 0px -53px #fff, 65px 14px 0px -53px #fff, 
-    63px 23px 0px -53px #fff, 59px 32px 0px -53px #fff, 54px 40px 0px -53px #fff, 
-    48px 47px 0px -53px #fff, 41px 53px 0px -53px #fff, 36px 46px 0px -53px #fff, 
-    33px 58px 0px -53px #fff, 27px 60px 0px -53px #fff, 20px 63px 0px -53px #fff, 
-    14px 64px 0px -53px #fff, 8px 66px 0px -53px #fff, 0px 67px 0px -53px #fff, 
-    -9px 66px 0px -53px #fff, -17px 64px 0px -53px #fff, -25px 62px 0px -53px #fff, 
-    -33px 58px 0px -53px #fff, -41px 53px 0px -53px #fff, -48px 47px 0px -53px #fff, 
-    -53px 41px 0px -53px #fff, -56px 36px 0px -53px #fff, -59px 32px 0px -53px #fff, 
-    -62px 26px 0px -53px #fff, -64px 20px 0px -53px #fff, -65px 14px 0px -53px #fff, 
-    -66px 7px 0px -53px #fff, -67px 0px 0px -53px #fff, 0 0 0 12px #3b2843; 
-}
-#js_logo {
-    box-shadow: 0 0 0 2px #fff, 0px -67px 0px -53px #fff, 9px -66px 0px -53px #fff, 
-    17px -64px 0px -53px #fff, 25px -62px 0px -53px #fff, 33px -58px 0px -53px #fff, 
-    41px -53px 0px -53px #fff, 48px -47px 0px -53px #fff, 53px -41px 0px -53px #fff, 
-    56px -36px 0px -53px #fff, 59px -32px 0px -53px #fff, 62px -26px 0px -53px #fff, 
-    64px -20px 0px -53px #fff, 65px -14px 0px -53px #fff, 66px -7px 0px -53px #fff, 
-    67px 0px 0px -53px #fff, 66px 9px 0px -53px #fff, 65px 14px 0px -53px #fff, 
-    63px 23px 0px -53px #fff, 59px 32px 0px -53px #fff, 54px 40px 0px -53px #fff, 
-    48px 47px 0px -53px #fff, 41px 53px 0px -53px #fff, 36px 46px 0px -53px #fff, 
-    33px 58px 0px -53px #fff, 27px 60px 0px -53px #fff, 20px 63px 0px -53px #fff, 
-    14px 64px 0px -53px #fff, 8px 66px 0px -53px #fff, 0px 67px 0px -53px #fff,
-    0 0 0 12px #3b2843; 
-}
-
-#css_logo {
-    box-shadow: 0 0 0 2px #fff, 0px -67px 0px -53px #fff, 9px -66px 0px -53px #fff, 
-    17px -64px 0px -53px #fff, 25px -62px 0px -53px #fff, 33px -58px 0px -53px #fff, 
-    41px -53px 0px -53px #fff, 48px -47px 0px -53px #fff, 53px -41px 0px -53px #fff, 
-    56px -36px 0px -53px #fff, 59px -32px 0px -53px #fff, 62px -26px 0px -53px #fff, 
-    64px -20px 0px -53px #fff, 65px -14px 0px -53px #fff, 66px -7px 0px -53px #fff, 
-    67px 0px 0px -53px #fff, 66px 9px 0px -53px #fff, 65px 14px 0px -53px #fff, 
-    63px 23px 0px -53px #fff, 59px 32px 0px -53px #fff, 54px 40px 0px -53px #fff, 
-    48px 47px 0px -53px #fff, 41px 53px 0px -53px #fff, 36px 46px 0px -53px #fff, 
-    33px 58px 0px -53px #fff, 27px 60px 0px -53px #fff, 20px 63px 0px -53px #fff, 
-    14px 64px 0px -53px #fff, 8px 66px 0px -53px #fff, 0px 67px 0px -53px #fff,     
-    -9px 66px 0px -53px #fff, -17px 64px 0px -53px #fff, -25px 62px 0px -53px #fff, 
-    -33px 58px 0px -53px #fff, -41px 53px 0px -53px #fff, -48px 47px 0px -53px #fff, 
-    -53px 41px 0px -53px #fff, -56px 36px 0px -53px #fff, -59px 32px 0px -53px #fff, 
-    -62px 26px 0px -53px #fff, -64px 20px 0px -53px #fff, -65px 14px 0px -53px #fff, 
-    -66px 7px 0px -53px #fff, -67px 0px 0px -53px #fff, 0 0 0 12px #3b2843; 
-}
-
-#html_logo {
-    box-shadow: 0 0 0 2px #fff, 0px -67px 0px -53px #fff, 9px -66px 0px -53px #fff, 
-    17px -64px 0px -53px #fff, 25px -62px 0px -53px #fff, 33px -58px 0px -53px #fff, 
-    41px -53px 0px -53px #fff, 48px -47px 0px -53px #fff, 53px -41px 0px -53px #fff, 
-    56px -36px 0px -53px #fff, 59px -32px 0px -53px #fff, 62px -26px 0px -53px #fff, 
-    64px -20px 0px -53px #fff, 65px -14px 0px -53px #fff, 66px -7px 0px -53px #fff, 
-    67px 0px 0px -53px #fff, 66px 9px 0px -53px #fff, 65px 14px 0px -53px #fff, 
-    63px 23px 0px -53px #fff, 59px 32px 0px -53px #fff, 54px 40px 0px -53px #fff, 
-    48px 47px 0px -53px #fff, 41px 53px 0px -53px #fff, 36px 46px 0px -53px #fff, 
-    33px 58px 0px -53px #fff, 27px 60px 0px -53px #fff, 20px 63px 0px -53px #fff, 
-    14px 64px 0px -53px #fff, 8px 66px 0px -53px #fff, 0px 67px 0px -53px #fff,     
-    -9px 66px 0px -53px #fff, -17px 64px 0px -53px #fff, -25px 62px 0px -53px #fff, 
-    -33px 58px 0px -53px #fff, -41px 53px 0px -53px #fff, -48px 47px 0px -53px #fff, 
-    -53px 41px 0px -53px #fff, -56px 36px 0px -53px #fff, -59px 32px 0px -53px #fff, 
-    -62px 26px 0px -53px #fff, -64px 20px 0px -53px #fff, -65px 14px 0px -53px #fff, 
-    -66px 7px 0px -53px #fff, -67px 0px 0px -53px #fff, 0 0 0 12px #3b2843; 
-}
-
-#cplus {
-    box-shadow: 0 0 0 2px #fff, 0px -67px 0px -53px #fff, 9px -66px 0px -53px #fff, 
-    17px -64px 0px -53px #fff, 25px -62px 0px -53px #fff, 0 0 0 12px #3b2843; 
+    width: 120px;
 }
 
 #projet {
@@ -467,6 +362,7 @@ footer {
     align-items: center;
     background: linear-gradient(to bottom, #f2ebf4, #d8c1df);
     display: flex;
+    flex-wrap: wrap;
     height: 30vh;
     justify-content: space-evenly;
     left: 0;
