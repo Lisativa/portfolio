@@ -60,12 +60,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    line-height: 1.1;
 }
 
 ul li {
+    display : flex;
     list-style-type: none;
     margin-left: 20px;
-
 }
 
 ul li a {
@@ -96,8 +97,9 @@ ul li a:hover {
 
 #text {
     color : #fff;
-    font-size: clamp(5vh, 6em, 12vw);
+    font-size: clamp(7vh, 6em, 12vw);
     position: absolute;
+    text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
@@ -107,7 +109,7 @@ ul li a:hover {
     object-fit: cover;
     pointer-events: none;
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 100%;
 }
 
@@ -115,7 +117,7 @@ ul li a:hover {
     float: left;
     height: 30px;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 13px;
     width: 30px;
 }
 
@@ -431,6 +433,25 @@ footer .cvita a{
 
     section {
         padding: 30px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 10 px;
+    }
+    
+    p {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #name img {
+        height: 50%;
+    }
+
+    #text {
+        padding: 10px;
     }
     
 }
