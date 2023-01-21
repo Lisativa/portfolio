@@ -18,22 +18,9 @@
     zoom: 1.0;
 }
 
-@media screen and (min-width: 576px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    section {
-        background: #3b2843;
-        height: 100vh;
-        padding: 50px;
-        position: relative;
-        overflow: hidden;
-    }
-}
-
 body {
-    min-height: 100vh;
+    display: block;
+    min-height: 100%;
     overflow-x: hidden;
 }
 
@@ -77,7 +64,7 @@ header {
 
 section {
     background: #3b2843;
-    height: 100vh;
+    height: 100%;
     padding: 80px;
     position: relative;
     overflow: hidden;
@@ -94,7 +81,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(1vh, 1em, 2vw);
+    font-size: clamp(3vh, 1em, 2vw);
     font-weight: 300;
     padding: 10px;
 }
@@ -232,6 +219,7 @@ ul li a:hover {
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
+    overflow-x: hidden;
     transform: translateX(-400%);
     transition: transform 1.5s ease;
     z-index: 10;
@@ -246,7 +234,7 @@ ul li a:hover {
 }
 
 #schools .container .space {
-    height: 150px;
+    max-height: 150px;
     margin: 20px;
     width: 130px;
 }
@@ -261,8 +249,6 @@ ul li a:hover {
     margin-right: 30px;
     margin-top: 20px;
     max-height: 170px;
-    max-width: 170px;
-    position: flex;
 }
 
 #constellation {
@@ -312,6 +298,7 @@ ul li a:hover {
     align-items: center;
     border-radius: 50%;
     border: 15px solid transparent;
+    column-gap: 1em;
     height: 120px;
     justify-content: center;
     margin: 30px;
