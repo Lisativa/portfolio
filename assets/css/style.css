@@ -117,27 +117,27 @@ ul li a:hover {
     float: left;
     height: 30px;
     margin-right: 10px;
-    margin-top: 13px;
     width: 30px;
 }
 
 #about .mini_logo {
     align-items: center;
-    display: flow-root;
+    display: flex;
     justify-content: left;
 }
 
 #about .cloud_about {
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .cloud_about img {
+    bottom: 0;
     max-height: 45%;
     max-width: 45%;
     position: absolute;
-    top: 55%;
     z-index: 100;
 }
 
@@ -170,7 +170,6 @@ ul li a:hover {
 }
 
 #schools .schoolbox {
-
     align-items: center;
     background-image: linear-gradient(to right top, #91769c, #957ba5, #9980ad, #9c86b6, #9f8bbf, #9f90c5, #9e94cc, #9d99d2, #999fd7, #96a4db, #92aadf, #8fafe2);
     border-radius: 100px;
@@ -186,13 +185,13 @@ ul li a:hover {
     justify-content: space-around;
     margin-bottom: 25px;
     overflow-x: hidden;
-    transform: translateX(-400%);
+    transform: translateX(400%);
     transition: transform 1.5s ease;
     z-index: 10;
 }
 
 #schools .container:nth-of-type(even) {
-    transform: translateX(400%);
+    transform: translateX(-400%);
 }
 
 #schools .container.show{
@@ -214,7 +213,7 @@ ul li a:hover {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
-    max-height: 170px;
+    height: 170px;
 }
 
 #constellation {
@@ -294,6 +293,7 @@ ul li a:hover {
     box-shadow: inset -25px 25px 51px #c8c0cb,
                 inset 25px -25px 51px #f1f1f1;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     min-height: 80vh;
     padding: 50px;
@@ -432,7 +432,7 @@ footer .cvita a{
     }
 
     section {
-        padding: 30px;
+        padding: 5%;
     }
 
     h2 {
@@ -443,7 +443,8 @@ footer .cvita a{
     
     p {
         font-size: 0.8em;
-        padding: 10px;
+        padding: 5%;
+        text-decoration: none;
     }
 
     #name img {
@@ -453,5 +454,23 @@ footer .cvita a{
     #text {
         padding: 10px;
     }
-    
+
+    #schools p {
+        font-size: 0.6em;
+    }
+
+    #schools .schoolbox {
+        padding: 5px;
+        position: relative;
+        right: 0;
+    }
+
+    #art_ap, #science_co {
+        height: 100px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 10px;
+    }
+
 }
