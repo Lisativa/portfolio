@@ -27,7 +27,8 @@ header {
 
 section {
     background: #3b2843;
-    height: 100%;
+    display:flow-root;
+    height: 100vh;
     padding: 80px;
     position: relative;
     overflow: hidden;
@@ -133,12 +134,17 @@ ul li a:hover {
     justify-content: center;
 }
 
+#about p {
+    margin-bottom: 10rem;
+}
+
+
 .cloud_about img {
-    bottom: 0;
-    max-height: 45%;
-    max-width: 45%;
+    margin: 20px;
+    max-height: 35%;
+    max-width: 35%;
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
 }
 
 #nuage_1 {
@@ -238,8 +244,8 @@ ul li a:hover {
 
 #language .box {
     align-items: center;
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -261,16 +267,13 @@ ul li a:hover {
 }
 
 #python_logo, #html_logo, #css_logo, #js_logo, #cplus {
-    align-items: center;
     border-radius: 50%;
-    border: 15px solid transparent;
-    column-gap: 1em;
-    justify-content: center;
+    border: 10px solid transparent;
     margin: 30px;
     max-width: 20vw;
     outline-offset: 12px;
     outline: 2px solid #ffffff;
-    width: 120px;
+    width: 100px;
 }
 
 #projet {
@@ -425,14 +428,15 @@ footer .cvita a{
     transition : 1000ms;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 480px) {
 
     header {
         padding: 30px 35px; 
     }
 
     section {
-        padding: 5%;
+        height: 100%;
+        padding: 10%;
     }
 
     h2 {
@@ -443,7 +447,7 @@ footer .cvita a{
     
     p {
         font-size: 0.8em;
-        padding: 5%;
+        padding: 10%;
         text-decoration: none;
     }
 
@@ -453,6 +457,10 @@ footer .cvita a{
 
     #text {
         padding: 10px;
+    }
+
+    #about p {
+        margin-bottom: 2rem;
     }
 
     #schools p {
@@ -465,12 +473,19 @@ footer .cvita a{
         right: 0;
     }
 
-    #art_ap, #science_co {
-        height: 100px;
-        margin-bottom: 10px;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 10px;
+    #schools .container .space {
+        max-height: 100px;
+        width: 20px;
     }
+
+    #art_ap, #science_co {
+        height: 80px;
+        margin: 5px;
+    }
+
+    #python_logo, #html_logo, #css_logo, #js_logo, #cplus {
+        margin: 5%;
+    }
+
 
 }
