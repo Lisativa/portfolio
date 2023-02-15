@@ -45,7 +45,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: 1em;
+    font-size: clamp(0.8em, 1em, 1em);
     font-weight: 300;
     padding: 10px;
 }
@@ -135,7 +135,7 @@ ul li a:hover {
 }
 
 #about p {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
 }
 
 
@@ -182,11 +182,11 @@ ul li a:hover {
     box-shadow: 7px 7px 14px #33223a,
                 -7px -7px 14px #432e4c;
     display: flex;
+    padding: 5px 10px;
     z-index: 10;
 }
 
 #schools .container {
-    border-radius: 100px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 25px;
@@ -258,8 +258,9 @@ ul li a:hover {
 }
 
 #wave_svg {
-    bottom: -70px;
+    bottom: 0px;
     left: 0;
+    margin-top: 10px;
     object-fit: cover;
     position: absolute;
     width: 100%;
@@ -289,6 +290,8 @@ ul li a:hover {
 
 .slider_text p {
     color: #3b2843;
+    font-size: 0.8em;
+
 }
 
 #projet .glass {
@@ -296,7 +299,7 @@ ul li a:hover {
     box-shadow: inset -25px 25px 51px #c8c0cb,
                 inset 25px -25px 51px #f1f1f1;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     min-height: 80vh;
     padding: 50px;
@@ -325,12 +328,12 @@ ul li a:hover {
     box-shadow: -5px 5px 22px #bdb5bf,
                 5px -5px 22px #ffffff;
     display: flex;
-    height: 28rem;
+    height: 21rem;
     nav-down: hidden;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    width: 15rem;
+    width: 12rem;
 }
 
 .slider img {
@@ -468,14 +471,14 @@ footer .cvita a{
     }
 
     #schools .schoolbox {
-        padding: 5px;
+        border-radius: 110px;
         position: relative;
         right: 0;
     }
 
     #schools .container .space {
         max-height: 100px;
-        width: 20px;
+        width: 10px;
     }
 
     #art_ap, #science_co {
