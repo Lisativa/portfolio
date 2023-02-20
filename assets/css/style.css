@@ -270,11 +270,11 @@ ul li a:hover {
 
 #python_logo, #html_logo, #css_logo, #js_logo, #cplus {
     border-radius: 50%;
-    border: 10px solid transparent;
+    border: 20px solid transparent;
+    box-shadow: 0 0 0 2px #fff;
     margin: 30px;
     max-width: 20vw;
     outline-offset: 12px;
-    outline: 2px solid #ffffff;
     width: 100px;
 }
 
