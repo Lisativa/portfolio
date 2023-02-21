@@ -29,7 +29,7 @@ section {
     background: #3b2843;
     display:flow-root;
     height: 100vh;
-    padding: 80px;
+    padding: 5% 7%;
     position: relative;
     overflow: hidden;
 }
@@ -131,18 +131,13 @@ ul li a:hover {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
-
-#about p {
-    margin-bottom: 7rem;
-}
-
 
 .cloud_about img {
     margin: 20px;
-    max-height: 35%;
-    max-width: 35%;
+    max-height: 40%;
+    max-width: 40%;
     min-width: 150px;
     position: absolute;
     z-index: 10000;
@@ -220,7 +215,7 @@ ul li a:hover {
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
-    height: 170px;
+    max-height: 170px;
 }
 
 #constellation {
@@ -431,14 +426,13 @@ footer .cvita a{
     transition : 1000ms;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
     header {
         padding: 30px 35px; 
     }
 
     section {
-        height: 100%;
         padding: 8%;
     }
 
@@ -462,8 +456,8 @@ footer .cvita a{
         padding: 10px;
     }
 
-    #about p {
-        margin-bottom: 2rem;
+    #schools h2 {
+        margin-bottom: 10%;
     }
 
     #schools p {
