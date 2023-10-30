@@ -3,6 +3,7 @@ let mountain_1 = document.getElementById('mountain_1');
 let mountain_2 = document.getElementById('mountain_2');
 let cloud_1 = document.getElementById('cloud_1');
 let cloud_2 = document.getElementById('cloud_2');
+let bghills = document.getElementById('bghills')
 
 let nuage_1 = document.getElementById('nuage_1');
 let nuage_2 = document.getElementById('nuage_2');
@@ -23,6 +24,7 @@ window.addEventListener('scroll', () => {
     cloud_1.style.left = value * -0.5 + 'px';
     mountain_1.style.left = value * -0.5 + 'px';
     mountain_2.style.left = value * 1.5 + 'px';
+    bghills.style.top = value * -0.08 + 'px';
 
     star.style.top  = value * -0.5 + 'px';
     star_1.style.left = value * 0.5 + 'px';
@@ -59,4 +61,3 @@ window.addEventListener('scroll', checkContainers)
             }
         })
     }
-    
