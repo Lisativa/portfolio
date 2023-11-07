@@ -251,6 +251,7 @@ ul li a:hover {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 1.5rem;
     justify-content: center;
 }
 
@@ -286,9 +287,9 @@ ul li a:hover {
 
 .box .pourcent {
     position: relative;
-    margin: -2.5rem;
+    margin: -1.5rem;
     transform: rotate(270deg);
-    width: clamp(15rem, 25vw, 100px);
+    width: clamp(11rem, 25vw, 100px);
 } 
 
 .box .pourcent svg {
@@ -372,6 +373,7 @@ svg circle:nth-child(3) {
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 3rem;
 }
 
 .slider_text nav label {
@@ -597,5 +599,13 @@ footer .cvita a{
     #schools .container p {
         font-size: 1.8vh;
         padding: 5px;
+    }
+
+    .slider_text nav label {
+        height: clamp(50px, 8vh, 40vh);
+    }
+
+    .slider_text nav .select {
+        height: clamp(50px, 8vh, 40vh);
     }
 }
