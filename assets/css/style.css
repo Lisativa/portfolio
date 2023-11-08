@@ -122,6 +122,21 @@ ul li a:hover {
     width: 100%;
 }
 
+#bgstars {
+    animation: floatingstars 7s infinite;
+
+}
+
+@keyframes floatingstars {
+    25% {
+        transform: rotate(1deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+}
+
 /* About */
 
 #moon_mini {
@@ -153,18 +168,18 @@ ul li a:hover {
 }
 
 #nuage_1 {
-    animation: floating 3s infinite;
+    animation: floatingcloud 3s infinite;
 }
 
 #nuage_2 {
-    animation: floating 5s infinite;
+    animation: floatingcloud 5s infinite;
 }
 
 #nuage_3 {
-    animation: floating 4s infinite;
+    animation: floatingcloud 4s infinite;
 }
 
-@keyframes floating {
+@keyframes floatingcloud {
     10% {
         transform: none;
     }

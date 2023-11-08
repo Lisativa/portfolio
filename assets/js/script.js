@@ -3,7 +3,7 @@ let mountain_1 = document.getElementById('mountain_1');
 let mountain_2 = document.getElementById('mountain_2');
 let cloud_1 = document.getElementById('cloud_1');
 let cloud_2 = document.getElementById('cloud_2');
-let bghills = document.getElementById('bghills')
+let bghills = document.getElementById('bghills');
 
 let nuage_1 = document.getElementById('nuage_1');
 let nuage_2 = document.getElementById('nuage_2');
