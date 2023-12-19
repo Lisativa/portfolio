@@ -124,7 +124,6 @@ ul li a:hover {
 
 #bgstars {
     animation: floatingstars 7s infinite;
-
 }
 
 @keyframes floatingstars {
