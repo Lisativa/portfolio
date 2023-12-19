@@ -99,7 +99,7 @@ ul li a:hover {
     align-items: center;
     background: linear-gradient(#2f1544, #b696b6);
     display: flex;
-    height: clamp(500px, 110vh, 150vh);
+    height: clamp(500px, 110dvh, 150dvh);
     justify-content: center;
     position: relative;
 }
