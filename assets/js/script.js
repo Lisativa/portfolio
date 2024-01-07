@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
 
 function App() {
     const [offsetY, setOffsetY] = useState[0];
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+    const handleScroll = () => setOffsetY(window.scrollY);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
