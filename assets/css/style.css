@@ -30,10 +30,11 @@ header {
 section {
     background: #41234c;
     display: flow-root;
-    height: clamp(500px, 110vh, 150vh);
+    height: clamp(600px, 110vh, 150vh);
     padding: 5% 7%;
     position: relative;
     overflow: hidden;
+    min-width: 430px;
 }
 
 h2 {
@@ -47,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.5vh, 1rem);
+    font-size: clamp(0.75rem, 2.5vh, 2rem);
     font-weight: 300;
     padding: 10px;
 }
@@ -277,7 +278,7 @@ ul li a:hover {
     z-index: 0;
 }
 
-#wave_svg {
+#wave {
     bottom: 0px;
     left: 0;
     margin-top: 10px;
@@ -296,25 +297,21 @@ ul li a:hover {
     outline-offset: 12px;
     position: absolute;
     transform: translate(0.5rem,0.5rem) rotate(-270deg);
-    height: clamp(2rem, 25vw, 100px);
+    height: clamp(2rem, 20vw, 100px);
 }
 
 .box .pourcent {
     position: relative;
     margin: -1.5rem;
     transform: rotate(270deg);
-    width: clamp(11rem, 25vw, 100px);
+    width: 11rem;
 } 
 
-.box .pourcent svg {
-    position: relative;
-}
 
 svg circle {
     position: relative; 
     fill: none; 
     stroke: #523f5a;
-    stroke-linecap: round;
     stroke-width: 6px; 
     transform: translate(0.5rem,0.5rem);
 }
@@ -326,7 +323,7 @@ svg circle:nth-child(2) {
     stroke-width: 5;
 }
 
-svg circle:nth-child(3) {
+svg .progress {
     animation: circle 4s ease-out forwards;
     stroke-dasharray: 314;
     stroke-dashoffset: 0;
@@ -437,7 +434,7 @@ svg circle:nth-child(3) {
 }
 
 #Memorio:checked ~ nav .select {
-    top: clamp(50px, 10vh, 40vh);
+    top: clamp(50px, 8vh, 40vh);
 }
 
 /* Slider image */
@@ -599,10 +596,12 @@ footer .cvita a{
 
     #art_ap {
         margin-bottom: 0;
+        height: clamp(7vh, 15vh, 15vh);
     } 
     
     #science_co {
         margin-top: 0;
+        height: clamp(7vh, 15vh, 15vh);
     }
 
     #schools .schoolbox {
@@ -611,7 +610,6 @@ footer .cvita a{
     }
 
     #schools .container p {
-        font-size: 1.8vh;
         padding: 5px;
     }
 
