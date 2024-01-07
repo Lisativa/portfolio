@@ -48,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.5vh, 2rem);
+    font-size: clamp(0.75rem, 2.25vh, 2rem);
     font-weight: 300;
     padding: 10px;
 }
@@ -596,10 +596,12 @@ footer .cvita a{
 
     #art_ap {
         margin-bottom: 0;
+        height: clamp(50px, 1vh, 15vh);
     } 
     
     #science_co {
         margin-top: 0;
+        height: clamp(50px, 15vh, 15vh);
     }
 
     #schools .schoolbox {
