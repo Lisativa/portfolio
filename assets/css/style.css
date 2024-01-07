@@ -596,12 +596,10 @@ footer .cvita a{
 
     #art_ap {
         margin-bottom: 0;
-        height: clamp(7vh, 15vh, 15vh);
     } 
     
     #science_co {
         margin-top: 0;
-        height: clamp(7vh, 15vh, 15vh);
     }
 
     #schools .schoolbox {
