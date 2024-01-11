@@ -560,6 +560,10 @@ svg .progress {
     opacity: 1;
 }
 
+.slider_section p {
+    margin: 1.5rem;
+}
+
 /* Footer */
 
 footer {
@@ -684,6 +688,15 @@ footer .cvita a{
         padding: 5px;
     }
 
+    #projet .glass {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .slider_text nav {
+        margin-top: 0.5rem;
+    }
+    
     .slider_text nav label {
         height: clamp(50px, 8vh, 40vh);
     }
