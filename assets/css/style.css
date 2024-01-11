@@ -30,7 +30,7 @@ header {
 section {
     background: #41234c;
     display: flow-root;
-    height: clamp(600px, 110vh, 150vh);
+    height: clamp(600px, 100vh, 150vh);
     padding: 5% 7%;
     position: relative;
     overflow: hidden;
@@ -97,10 +97,10 @@ ul li a:hover {
 }
 
 #name {
+    background-image: linear-gradient(to bottom, #41234C, #81385F, #bc5662c4, #e8825dce, #fdba5bb6);
     align-items: center;
-    background: linear-gradient(#2f1544, #b696b6);
     display: flex;
-    height: clamp(500px, 110dvh, 150dvh);
+    height: clamp(500px, 100svh, 150dvh);
     justify-content: center;
     position: relative;
 }
@@ -116,7 +116,6 @@ ul li a:hover {
 #name img {
     height: 100%;
     left: 0;
-    object-fit: cover;
     pointer-events: none;
     position: absolute;
     bottom: 0;
@@ -160,8 +159,8 @@ ul li a:hover {
 }
 
 .cloud_about img {
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 40%;
+    max-width: 40%;
     min-width: 150px;
     position: absolute;
     z-index: 1000;
@@ -201,7 +200,7 @@ ul li a:hover {
 #schools .schoolbox {
     align-items: center;
     background-image: linear-gradient(to right top, #91769c, #957ba5, #9980ad, #9c86b6, #9f8bbf, #9f90c5, #9e94cc, #9d99d2, #999fd7, #96a4db, #92aadf, #8fafe2);
-    border-radius: 100px;
+    border-radius: 200px;
     box-shadow: 7px 7px 14px #33223a,
                 -7px -7px 14px #432e4c;
     display: flex;
@@ -297,7 +296,7 @@ ul li a:hover {
 
 .box .pourcent {
     position: relative;
-    margin: -1.5rem;
+    margin: -2rem;
     transform: rotate(270deg);
     width: 11rem;
 } 
@@ -630,7 +629,7 @@ footer .cvita a{
 
 /* Media queries */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     header {
         padding: 30px 35px; 
@@ -653,14 +652,27 @@ footer .cvita a{
         padding: 8px;
     }
 
+    #name img {
+        object-fit: cover;
+    }
+
+    .cloud_about img {
+        max-height: 75%;
+        max-width: 75%;
+    }
+
+    #star, #star_1, #star_2, #star_3 {
+        display: none;
+    }
+
     #art_ap {
         margin-bottom: 0;
-        height: clamp(50px, 10vh, 15vh);
+        height: clamp(50px, 9vh, 15vh);
     } 
     
     #science_co {
         margin-top: 0;
-        height: clamp(50px, 10vh, 15vh);
+        height: clamp(50px, 9vh, 15vh);
     }
 
     #schools .schoolbox {
