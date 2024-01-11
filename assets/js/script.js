@@ -26,11 +26,11 @@ window.addEventListener('scroll', () => {
     mountain_2.style.left = value * 1.5 + 'px';
     bghills.style.top = value * -0.08 + 'px';
 
-    star.style.top  = value * -0.5 + 'px';
-    star_1.style.left = value * 0.5 + 'px';
-    star_2.style.top  = value * -0.5 + 'px';
-    star_2.style.right  = value * -0.5 + 'px';
-    star_3.style.left = value * -0.5 + 'px';
+    star.style.top  = value * -0.1 + 'px';
+    star_1.style.left = value * 0.12 + 'px';
+    star_2.style.top  = value * -0.15 + 'px';
+    star_2.style.right  = value * -0.05 + 'px';
+    star_3.style.left = value * -0.02 + 'px';
 
 });
 
@@ -61,3 +61,4 @@ window.addEventListener('scroll', checkContainers)
             }
         })
     }
+

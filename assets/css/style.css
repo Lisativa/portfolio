@@ -34,13 +34,13 @@ section {
     padding: 5% 7%;
     position: relative;
     overflow: hidden;
-    min-width: 430px;
+    min-width: 200px;
 }
 
 h2 {
     color: #fff;
     font-family: 'Pacifico', sans-serif;
-    font-size: clamp(2rem, 6.5vh, 3rem);
+    font-size: clamp(2rem, 6.5vh, 10rem);
     font-weight: 400;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
@@ -48,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.25vh, 2rem);
+    font-size: clamp(0.75rem, 2.25vh, 5rem);
     font-weight: 300;
     padding: 10px;
 }
@@ -262,9 +262,16 @@ ul li a:hover {
     z-index: 0;
 }
 
-#language .box {
-    align-items: center;
+.dev {
     display: flex;
+}
+
+.desgn {
+    display: none;
+}
+
+.dev, .desgn {
+    align-items: center;
     flex-wrap: wrap;
     margin-left: 1.5rem;
     justify-content: center;
@@ -288,25 +295,12 @@ ul li a:hover {
     z-index: 0;
 }
 
-#python_logo, #html_logo, #css_logo, #js_logo, #cplus {
-    align-items: center;
-    inset: 0;
-    border-radius: 50%;
-    border: 10px solid transparent;
-    display: flex;
-    outline-offset: 12px;
-    position: absolute;
-    transform: translate(0.5rem,0.5rem) rotate(-270deg);
-    height: clamp(2rem, 20vw, 100px);
-}
-
 .box .pourcent {
     position: relative;
     margin: -1.5rem;
     transform: rotate(270deg);
     width: 11rem;
 } 
-
 
 svg circle {
     position: relative; 
@@ -324,7 +318,7 @@ svg circle:nth-child(2) {
 }
 
 svg .progress {
-    animation: circle 4s ease-out forwards;
+    animation: circle 2s ease-out forwards;
     stroke-dasharray: 314;
     stroke-dashoffset: 0;
 }
@@ -333,6 +327,66 @@ svg .progress {
     to {
         stroke-dashoffset: -314;
     }
+}
+
+.box nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.box nav label {
+    align-items: center;
+    background-color: #f2ebf4;
+    color: #442153;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    height: clamp(50px, 8vh, 40vh);
+    justify-content: center;
+    margin: 0.5rem;
+    outline: none;
+    padding: 1.5rem;
+    z-index: 15;
+}
+
+.box nav label:hover {
+    color: #7c608a;
+}
+
+.box input[type="radio"] {
+    display: none;
+}
+
+#Dev:checked ~ .dev,
+#Design:checked ~ .desgn {
+    display: flex;
+}
+
+#Dev:checked ~ nav .Dev,
+#Design:checked ~ nav .Design {
+    background-color: transparent;
+    border: 2px solid #f2ebf4;
+    color: #f2ebf4;
+    z-index: 1000;
+}
+
+#Design:checked ~ .dev {
+    display: none;
+}
+
+#python_logo, #html_logo, #css_logo, #js_logo, #cplus, #ps_logo, #id_logo, #figma_logo, #blender_logo {
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    display: flex;
+    inset: 0;
+    outline-offset: 12px;
+    position: absolute;
+    transform: translate(0.5rem,0.5rem) rotate(-270deg);
+    height: clamp(5rem, 26vw, 100px);
 }
 
 /* Projet glass section */
@@ -395,7 +449,7 @@ svg .progress {
     cursor: pointer;
     display: block;
     font-weight: 600;
-    height: clamp(50px, 10vh, 40vh);
+    height: clamp(50px, 8vh, 40vh);
     line-height: 60px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -403,8 +457,8 @@ svg .progress {
     z-index: 12;
 }
 
-.slider_text nav label :hover {
-    color: #a58caf;
+.slider_text nav label:hover {
+    color: #7c608a;
 }
 
 #Hempburn:checked ~ nav .Hempburn,
@@ -422,7 +476,7 @@ svg .progress {
     border-radius: 10px;
     box-shadow: inset -7px 7px 24px #8d8abd,
                 inset 7px -7px 24px #ada8e7;
-    height: clamp(50px, 10vh, 40vh);
+    height: clamp(50px, 8vh, 40vh);
     position: absolute;
     transition: all 0.4s ease;
     width: 100%;
@@ -587,7 +641,12 @@ footer .cvita a{
     }
 
     h2 {
-        padding: 10 px;
+        font-size: 5vh;
+    }
+
+    p {
+        font-size: 1.8vh;
+        padding: 5px;
     }
 
     #text {
@@ -596,12 +655,12 @@ footer .cvita a{
 
     #art_ap {
         margin-bottom: 0;
-        height: clamp(50px, 1vh, 15vh);
+        height: clamp(50px, 10vh, 15vh);
     } 
     
     #science_co {
         margin-top: 0;
-        height: clamp(50px, 15vh, 15vh);
+        height: clamp(50px, 10vh, 15vh);
     }
 
     #schools .schoolbox {
