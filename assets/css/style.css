@@ -48,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.25vh, 5rem);
+    font-size: clamp(0.75rem, 2.5vh, 20rem);
     font-weight: 300;
     padding: 10px;
 }
@@ -56,7 +56,7 @@ p {
 /* Page accueil */
 
 .logo {
-    font-size: 2em;
+    font-size: clamp(2em, 3vh, 40px);
     color : #ffffffb6;
     pointer-events : none;
 }
@@ -80,6 +80,7 @@ ul li {
 ul li a {
     border-radius: 20px;
     color: white;
+    font-size: clamp(1em, 2vh, 30px);
     padding: 6px 15px;
     text-decoration: none;
 }
@@ -107,7 +108,7 @@ ul li a:hover {
 
 #text {
     color : #fff;
-    font-size: clamp(7vh, 6em, 12vw);
+    font-size: clamp(7vh, 15vh, 60vw);
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
@@ -192,9 +193,13 @@ ul li a:hover {
 
 /* Ecole */
 
+.cont {
+    margin-top: 5vh;
+}
+
 #schools p {
     vertical-align: middle;
-    margin: 0.75rem;
+    margin: 2.5vh;
 }
 
 #schools .schoolbox {
@@ -259,6 +264,7 @@ ul li a:hover {
     right: 0;
     top: 0;
     z-index: 0;
+    height: 70vh;
 }
 
 .dev {
@@ -277,6 +283,7 @@ ul li a:hover {
 }
 
 #constellation_banner {
+    height: 30vh;
     left: 0;
     opacity: .2;
     position: absolute;
@@ -296,7 +303,7 @@ ul li a:hover {
 
 .box .pourcent {
     position: relative;
-    margin: -2rem;
+    margin: -1.25rem;
     transform: rotate(270deg);
     width: 11rem;
 } 
@@ -342,17 +349,18 @@ svg .progress {
     border-radius: 14px;
     cursor: pointer;
     display: flex;
+    font-size: 2vh;
     font-weight: 600;
-    height: clamp(50px, 8vh, 40vh);
+    height: clamp(50px, 8vh, 40em);
     justify-content: center;
     margin: 0.5rem;
     outline: none;
-    padding: 1.5rem;
+    padding: 3vh;
     z-index: 15;
 }
 
 .box nav label:hover {
-    color: #7c608a;
+    color: #846c91;
 }
 
 .box input[type="radio"] {
@@ -364,11 +372,24 @@ svg .progress {
     display: flex;
 }
 
+.box nav .Dev {
+    background-color: transparent;
+    border: 2px solid #f2ebf4;
+    color: #f2ebf4;
+}
+
 #Dev:checked ~ nav .Dev,
 #Design:checked ~ nav .Design {
     background-color: transparent;
     border: 2px solid #f2ebf4;
     color: #f2ebf4;
+    z-index: 1000;
+}
+
+#Dev:checked ~ nav .Design,
+#Design:checked ~ nav .Dev {
+    background-color: #f2ebf4;
+    color: #442153;
     z-index: 1000;
 }
 
@@ -429,7 +450,7 @@ svg .progress {
 .slider_text p {
     align-items: center;
     color: #442153;
-    width : 100%;
+    justify-content: center;
 }
 
 .slider_text nav {
@@ -438,6 +459,7 @@ svg .progress {
     flex-direction: column;
     position: relative;
     margin: 3rem;
+    margin-top: 0;
 }
 
 .slider_text nav label {
@@ -446,13 +468,15 @@ svg .progress {
                 7px -7px 24px #ffffff;
     color: #341142;
     cursor: pointer;
-    display: block;
+    display: flex;
+    font-size: 2vh;
     font-weight: 600;
-    height: clamp(50px, 8vh, 40vh);
+    height: clamp(50px, 6vh, 40vh);
+    justify-content: center;
     line-height: 60px;
     padding-left: 2rem;
     padding-right: 2rem;
-    width: 100%;
+    width: 15vh;
     z-index: 12;
 }
 
@@ -475,11 +499,11 @@ svg .progress {
     border-radius: 10px;
     box-shadow: inset -7px 7px 24px #8d8abd,
                 inset 7px -7px 24px #ada8e7;
-    height: clamp(50px, 8vh, 40vh);
+    height: clamp(50px, 6vh, 40vh);
     position: absolute;
     transition: all 0.4s ease;
     width: 100%;
-    z-index: 100;
+    z-index: 20;
 }
 
 #Hempburn:checked ~ nav .select {
@@ -487,7 +511,7 @@ svg .progress {
 }
 
 #Memorio:checked ~ nav .select {
-    top: clamp(50px, 8vh, 40vh);
+    top: clamp(50px, 6vh, 40vh);
 }
 
 /* Slider image */
@@ -509,6 +533,7 @@ svg .progress {
 #Hempburn:checked ~ .slider_section .slider_Hempburn,
 #Memorio:checked ~ .slider_section .slider_Memorio {
     display: flex;
+    width: 25rem;
 }
 
 #Memorio:checked ~ .slider_section .slider_Hempburn {
@@ -516,11 +541,11 @@ svg .progress {
 }
 
 .slider {
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     box-shadow: -5px 5px 22px #bdb5bf,
                 5px -5px 22px #ffffff;
     display: flex;
-    height: clamp(10.5vh, 21rem, 21rem);
+    height: clamp(20em, 20vh, 21rem);
     margin: -2rem;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -633,7 +658,15 @@ footer .cvita a{
 
 /* Media queries */
 
-@media (max-width: 768px) {
+@media (max-width: 1366px){
+
+    #name img {
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 700px) {
 
     header {
         padding: 30px 35px; 
@@ -648,16 +681,16 @@ footer .cvita a{
     }
 
     p {
-        font-size: 1.8vh;
+        font-size: clamp(10px, 1.8vh, 40px);
         padding: 5px;
     }
 
-    #text {
-        padding: 8px;
+    .logo {
+        font-size: 3vh;
     }
-
-    #name img {
-        object-fit: cover;
+    #text {
+        font-size: 8vh;
+        padding: 8px;
     }
 
     .cloud_about img {
@@ -675,7 +708,6 @@ footer .cvita a{
     } 
     
     #science_co {
-        margin-top: 0;
         height: clamp(50px, 9vh, 15vh);
     }
 
