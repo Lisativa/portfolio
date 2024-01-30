@@ -30,7 +30,7 @@ header {
 section {
     background: #41234c;
     display: flow-root;
-    height: clamp(600px, 100vh, 150vh);
+    height: clamp(600px, 100vh, 100vh);
     padding: 5% 7%;
     position: relative;
     overflow: hidden;
@@ -40,7 +40,7 @@ section {
 h2 {
     color: #fff;
     font-family: 'Pacifico', sans-serif;
-    font-size: clamp(2rem, 6.5vh, 10rem);
+    font-size: clamp(2rem, 6.5vh, 7vw);
     font-weight: 400;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0,0,0,.25);
@@ -48,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.5vh, 20rem);
+    font-size: clamp(0.75rem, 2.5vh, 2.5vw);
     font-weight: 300;
     padding: 10px;
 }
@@ -303,7 +303,7 @@ ul li a:hover {
 
 .box .pourcent {
     position: relative;
-    margin: -1.25rem;
+    margin: -1.5rem;
     transform: rotate(270deg);
     width: 11rem;
 } 
@@ -463,6 +463,7 @@ svg .progress {
 }
 
 .slider_text nav label {
+    align-items: center;
     border-radius: 12px;
     box-shadow: -7px 7px 24px #dad4dc,
                 7px -7px 24px #ffffff;
@@ -471,7 +472,7 @@ svg .progress {
     display: flex;
     font-size: 2vh;
     font-weight: 600;
-    height: clamp(50px, 6vh, 40vh);
+    height: clamp(50px, 8vh, 40vh);
     justify-content: center;
     line-height: 60px;
     padding-left: 2rem;
@@ -499,7 +500,7 @@ svg .progress {
     border-radius: 10px;
     box-shadow: inset -7px 7px 24px #8d8abd,
                 inset 7px -7px 24px #ada8e7;
-    height: clamp(50px, 6vh, 40vh);
+    height: clamp(50px, 8vh, 40vh);
     position: absolute;
     transition: all 0.4s ease;
     width: 100%;
@@ -511,7 +512,7 @@ svg .progress {
 }
 
 #Memorio:checked ~ nav .select {
-    top: clamp(50px, 6vh, 40vh);
+    top: clamp(50px, 8vh, 40vh);
 }
 
 /* Slider image */
@@ -533,7 +534,7 @@ svg .progress {
 #Hempburn:checked ~ .slider_section .slider_Hempburn,
 #Memorio:checked ~ .slider_section .slider_Memorio {
     display: flex;
-    width: 25rem;
+    width: clamp(10 rem, 10vh, 50rem);
 }
 
 #Memorio:checked ~ .slider_section .slider_Hempburn {
@@ -545,16 +546,16 @@ svg .progress {
     box-shadow: -5px 5px 22px #bdb5bf,
                 5px -5px 22px #ffffff;
     display: flex;
-    height: clamp(20em, 20vh, 21rem);
+    height: clamp(20em, 43vh, 100rem);
     margin: -2rem;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    width: 12rem;
+    width: clamp(10rem, 28vh, 30rem);
 }
 
 .slider_Memorio .slider {
-    width: 10.15rem;
+    width: clamp(10rem, 21vh, 30rem);;
 }
 
 .slider img {
@@ -608,7 +609,7 @@ footer {
 
 footer p {
     color: #3b2843;
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 2vh, 10rem);
 }
 
 .contact {
@@ -640,7 +641,7 @@ footer .cvita a{
     cursor: pointer;
     display: flex;
     font-family: 'Pacifico', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(0.75rem, 3vh, 10rem);
     font-weight: 400;
     padding: 2vh 5vh;
     text-decoration: none;
@@ -666,7 +667,10 @@ footer .cvita a{
 
 }
 
+
+
 @media (max-width: 700px) {
+    
 
     header {
         padding: 30px 35px; 
@@ -676,14 +680,10 @@ footer .cvita a{
         padding: 8%;
     }
 
-    h2 {
-        font-size: 5vh;
+    #schools, #language {
+        height: clamp(600px, 120vh, 120vh); 
     }
 
-    p {
-        font-size: clamp(10px, 1.8vh, 40px);
-        padding: 5px;
-    }
 
     .logo {
         font-size: 3vh;
