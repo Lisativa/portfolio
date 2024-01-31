@@ -478,7 +478,7 @@ svg .progress {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 15vh;
-    z-index: 12;
+    z-index: 1200;
 }
 
 .slider_text nav label:hover {
