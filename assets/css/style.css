@@ -486,7 +486,8 @@ svg .progress {
 }
 
 #Hempburn:checked ~ nav .Hempburn,
-#Memorio:checked ~ nav .Memorio {
+#Memorio:checked ~ nav .Memorio,
+#draw:checked ~ nav .draw {
     color: #fff;
     z-index: 1000;
 }
@@ -515,29 +516,39 @@ svg .progress {
     top: clamp(50px, 8vh, 40vh);
 }
 
+#draw:checked ~ nav .select {
+    top: clamp(50px, 16vh, 40vh);
+}
+
 /* Slider image */
 
 .slider_Hempburn {
     display: flex;
 }
 
-.slider_Memorio {
+.slider_Memorio,
+.slider_draw {
     display: none;
 }
 
 .slider_Hempburn,
-.slider_Memorio {
+.slider_Memorio,
+.slider_draw {
     align-items: center;
     flex-direction: column;
 }
 
 #Hempburn:checked ~ .slider_section .slider_Hempburn,
-#Memorio:checked ~ .slider_section .slider_Memorio {
+#Memorio:checked ~ .slider_section .slider_Memorio,
+#draw:checked ~ .slider_section .slider_draw {
     display: flex;
     width: clamp(10 rem, 10vh, 50rem);
 }
 
-#Memorio:checked ~ .slider_section .slider_Hempburn {
+#Memorio:checked ~ .slider_section .slider_Hempburn,
+#Memorio:checked ~ .slider_section .slider_draw,
+#draw:checked ~ .slider_section .slider_Hempburn,
+#draw:checked ~ .slider_section .slider_Memorio {
     display: none;
 }
 
@@ -556,6 +567,10 @@ svg .progress {
 
 .slider_Memorio .slider {
     width: clamp(10rem, 21vh, 30rem);;
+}
+
+.slider_Memorio .slider {
+    width: clamp(10rem, 30vh, 30rem);;
 }
 
 .slider img {
