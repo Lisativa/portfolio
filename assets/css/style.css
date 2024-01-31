@@ -451,6 +451,7 @@ svg .progress {
     align-items: center;
     color: #442153;
     justify-content: center;
+    z-index: 12000;
 }
 
 .slider_text nav {
@@ -478,7 +479,7 @@ svg .progress {
     padding-left: 2rem;
     padding-right: 2rem;
     width: 15vh;
-    z-index: 1200;
+    z-index: 12;
 }
 
 .slider_text nav label:hover {
