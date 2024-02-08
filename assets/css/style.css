@@ -688,7 +688,7 @@ footer .cvita a{
 
 /* Media queries */
 
-@media (max-width: 1366px){
+@media (min-width: 1400px) {
 
     #name img {
         object-fit: cover;
