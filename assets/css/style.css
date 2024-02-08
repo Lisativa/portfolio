@@ -460,7 +460,7 @@ svg .progress {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 3rem;
+    margin: 4rem;
     margin-top: 0;
 }
 
@@ -615,7 +615,7 @@ svg .progress {
 }
 
 .slider_section p {
-    margin: 1.5vh;
+    margin: 2vh;
     font-size: clamp(0.75rem, 2vh, 2.5vw);
 }
 
@@ -707,7 +707,7 @@ footer .cvita a{
         padding: 8%;
     }
 
-    #schools, #language {
+    #schools, #language, #projet {
         height: clamp(600px, 120vh, 120vh); 
     }
 
@@ -764,4 +764,12 @@ footer .cvita a{
     .slider_text nav .select {
         height: clamp(50px, 8vh, 40vh);
     }
+}
+
+@media (min-height: 900px) {
+
+    #about, #language {
+        height: clamp(600px, 60vh, 120vh); 
+    }
+
 }
