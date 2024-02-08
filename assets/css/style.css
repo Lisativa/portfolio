@@ -48,7 +48,7 @@ h2 {
 
 p {
     color: #fff;
-    font-size: clamp(0.75rem, 2.5vh, 2.5vw);
+    font-size: clamp(0.75rem, 2.25vh, 2.5vw);
     font-weight: 300;
     padding: 10px;
 }
@@ -101,14 +101,14 @@ ul li a:hover {
     background-image: linear-gradient(to bottom, #41234C, #81385F, #bc5662c4, #e8825dce, #fdba5bb6);
     align-items: center;
     display: flex;
-    height: clamp(500px, 100svh, 150dvh);
+    height: clamp(500px, 100vh, 150dvh);
     justify-content: center;
     position: relative;
 }
 
 #text {
     color : #fff;
-    font-size: clamp(7vh, 15vh, 60vw);
+    font-size: clamp(7vh, 11vh, 50vw);
     position: absolute;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
@@ -327,6 +327,7 @@ svg .progress {
     animation: circle 2s ease-out forwards;
     stroke-dasharray: 314;
     stroke-dashoffset: 0;
+    z-index: 10000;
 }
 
 @keyframes circle {
@@ -486,6 +487,17 @@ svg .progress {
     color: #7c608a;
 }
 
+.slider_text nav .Hempburn {
+    color: #fff;
+    z-index: 1000;
+}
+
+#Memorio:checked ~ nav .Hempburn,
+#draw:checked ~ nav .Hempburn {
+    color: #341142;
+    z-index: 12;
+}
+
 #Hempburn:checked ~ nav .Hempburn,
 #Memorio:checked ~ nav .Memorio,
 #draw:checked ~ nav .draw {
@@ -543,7 +555,7 @@ svg .progress {
 #Memorio:checked ~ .slider_section .slider_Memorio,
 #draw:checked ~ .slider_section .slider_draw {
     display: flex;
-    width: clamp(10 rem, 10vh, 50rem);
+    width: clamp(10rem, 40vh, 50rem);
 }
 
 #Memorio:checked ~ .slider_section .slider_Hempburn,
@@ -603,7 +615,8 @@ svg .progress {
 }
 
 .slider_section p {
-    margin: 1.5rem;
+    margin: 1.5vh;
+    font-size: clamp(0.75rem, 2vh, 2.5vw);
 }
 
 /* Footer */
@@ -683,8 +696,6 @@ footer .cvita a{
 
 }
 
-
-
 @media (max-width: 700px) {
     
 
@@ -704,8 +715,9 @@ footer .cvita a{
     .logo {
         font-size: 3vh;
     }
+
     #text {
-        font-size: 8vh;
+        font-size: 7vh;
         padding: 8px;
     }
 
