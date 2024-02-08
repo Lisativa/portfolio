@@ -638,7 +638,7 @@ footer {
 
 footer p {
     color: #3b2843;
-    font-size: clamp(0.75rem, 2vh, 10rem);
+    font-size: clamp(0.75rem, 1.75vh, 10rem);
 }
 
 .contact {
