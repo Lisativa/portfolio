@@ -769,7 +769,7 @@ footer .cvita a{
 @media (min-height: 900px) {
 
     #about, #language {
-        height: clamp(600px, 60vh, 120vh); 
+        height: clamp(600px, 80vh, 120vh); 
     }
 
 }
