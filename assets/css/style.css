@@ -575,7 +575,7 @@ svg .progress {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    width: clamp(10rem, 27vh, 30rem);
+    width: clamp(10rem, 28vh, 30rem);
 }
 
 .slider_Memorio .slider {
