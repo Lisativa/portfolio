@@ -311,9 +311,12 @@ ul li a:hover {
 svg circle {
     position: relative; 
     fill: none; 
-    stroke: #523f5a;
     stroke-width: 6px; 
     transform: translate(0.5rem,0.5rem);
+}
+
+svg .base {
+    stroke: #523f5a;
 }
 
 svg circle:nth-child(2) {
@@ -325,6 +328,7 @@ svg circle:nth-child(2) {
 
 svg .progress {
     animation: circle 2s ease-out forwards;
+    stroke: #523f5a;
     stroke-dasharray: 314;
     stroke-dashoffset: 0;
     z-index: 10000;
