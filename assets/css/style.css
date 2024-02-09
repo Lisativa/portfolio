@@ -90,18 +90,17 @@ ul li a:hover {
     color: #2f1544;
 }
 
-/* parallax */
-
-#space {
-    display: flex;
-    width: 10em;
+#centering {
+    width: clamp(2em, 10vh, 50px);
 }
+
+/* parallax */
 
 #name {
     background-image: linear-gradient(to bottom, #41234C, #81385F, #bc5662c4, #e8825dce, #fdba5bb6);
     align-items: center;
     display: flex;
-    height: clamp(500px, 100vh, 150dvh);
+    height: clamp(500px, 110vh, 150dvh);
     justify-content: center;
     position: relative;
 }
@@ -115,11 +114,12 @@ ul li a:hover {
 }
 
 #name img {
+    bottom: 0;
     height: 100%;
     left: 0;
+    object-fit: cover;
     pointer-events: none;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -571,11 +571,11 @@ svg .progress {
                 5px -5px 22px #ffffff;
     display: flex;
     height: clamp(20em, 43vh, 200rem);
-    margin: -2rem;
+    margin: -2.5rem;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    width: clamp(10rem, 28vh, 30rem);
+    width: clamp(10rem, 33vh, 30rem);
 }
 
 .slider_Memorio .slider {
@@ -687,14 +687,6 @@ footer .cvita a{
 }
 
 /* Media queries */
-
-@media (min-width: 1400px) {
-
-    #name img {
-        object-fit: cover;
-    }
-
-}
 
 @media (max-width: 700px) {
     
